@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Services | Event Management</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+<h2>Book Photography</h2>
+
+<form class="contact-form" action="../backend/book_photography.php" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="date" name="event_date" required>
+  <textarea name="details" rows="4" placeholder="Describe your photography needs"></textarea>
+  <button type="submit" class="btn submit-btn">Submit Booking</button>
+</form>
+
+<section class="service-page">
+  <h1>Photography Services</h1>
+  <p>Capture your most important moments with professional photography.</p>
+
+  <div class="service-grid">
+    <div class="card">
+      <h3>Basic Package</h3>
+      <p>2 hours shooting + 50 edited photos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium Package</h3>
+      <p>Full event coverage + album + 150 edited photos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Custom Package</h3>
+      <p>Create your own package including videography.</p>
+    </div>
+  </div>
+
+  <button class="btn">Book Photographer</button>
+  <br><br>
+  <a href="../index.html" class="btn">Back to Home</a>
+</section>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

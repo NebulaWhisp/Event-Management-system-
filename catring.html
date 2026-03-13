@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catering Services | Event Management</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+<h2>Book Catering</h2>
+
+<form class="contact-form" action="../backend/book_catering.php" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="date" name="event_date" required>
+  <textarea name="details" rows="4" placeholder="Describe your catering needs"></textarea>
+  <button type="submit" class="btn submit-btn">Submit Booking</button>
+</form>
+<section class="service-page">
+  <h1>Catering Services</h1>
+  <p>Choose from delicious, customizable menus perfect for birthdays, weddings, and corporate events.</p>
+
+  <div class="service-grid">
+    <div class="card">
+      <h3>Standard Menu</h3>
+      <p>Affordable and tasty meals for small gatherings.</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium Menu</h3>
+      <p>Includes appetizers, main course, desserts & drinks.</p>
+    </div>
+
+    <div class="card">
+      <h3>Custom Menu</h3>
+      <p>Fully customizable according to your theme and taste.</p>
+    </div>
+  </div>
+
+  <button class="btn">Book Catering</button>
+  <br><br>
+  <a href="../index.html" class="btn">Back to Home</a>
+</section>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

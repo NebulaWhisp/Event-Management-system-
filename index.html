@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.JS"></script>
+  <style>
+    .landing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: var(--background);
+      padding: 2rem;
+      flex-direction: column;
+    }
+
+    .landing-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .landing-header h1 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .landing-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .option-card {
+      background: var(--card, #fff);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-light);
+      padding: 2rem;
+      width: 280px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .option-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .option-card h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .option-card p {
+      color: var(--muted-foreground);
+      margin-bottom: 1.5rem;
+    }
+
+    .option-card a {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      border-radius: var(--radius);
+      background: var(--primary);
+      color: var(--primary-foreground);
+      text-decoration: none;
+      font-weight: var(--font-weight-medium);
+      transition: background 0.3s ease;
+    }
+
+    .option-card a:hover {
+      background: var(--accent);
+      color: var(--accent-foreground);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--muted-foreground);
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-container">
+    <div class="landing-header">
+      <h1>🎉 Welcome to Event Management System</h1>
+      <p class="text-muted">A single platform for event planning, coordination, and success.</p>
+    </div>
+
+    <div class="landing-options">
+      <div class="option-card">
+        <h2>Client View</h2>
+        <p>Book your event, browse available services, and track progress — no login required.</p>
+        <a href="client_dashboard.html">Enter as Client</a>
+      </div>
+
+      <div class="option-card">
+        <h2>Employee View</h2>
+        <p>Manage bookings, approve events, and handle requests — login required.</p>
+        <a href="login.php">Employee Login</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>023-65500 Faseeh Haider</p>
+    </footer>
+  </div>
+
+</body>
+</html>
+

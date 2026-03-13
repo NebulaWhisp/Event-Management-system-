@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Event Management</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" style="width:250px; background:var(--sidebar-bg); height:100vh; position:fixed; top:0; left:0; box-shadow:var(--shadow-light); display:flex; flex-direction:column;">
+    <div style="padding:1.5rem; border-bottom:1px solid var(--border-color);">
+      <h3 style="color:var(--sidebar-primary);">📅 EMS Panel</h3>
+    </div>
+    <nav style="flex-grow:1; display:flex; flex-direction:column; padding:1rem;">
+      <a href="#" class="nav-link" data-section="overview">Overview</a>
+      <a href="#" class="nav-link" data-section="bookings">My Bookings</a>
+      <a href="#" class="nav-link" data-section="create">Create Booking</a>
+      <a href="#" class="nav-link" data-section="settings">Settings</a>
+    </nav>
+    <div style="padding:1rem; border-top:1px solid var(--border-color);">
+      <button class="btn btn-danger" id="logoutBtn">Logout</button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main style="margin-left:250px; padding:2rem;">
+    <header class="navbar" style="justify-content:space-between;">
+      <h2>Welcome, User 👋</h2>
+      <button id="themeToggle" class="btn btn-secondary">Toggle Theme</button>
+    </header>
+
+    <section id="overview" class="content-section">
+      <h2>Dashboard Overview</h2>
+      <p>Here you’ll see quick stats about your events, bookings, and activities.</p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+        <div class="card" style="flex:1;">
+          <h3>Total Events</h3>
+          <p><strong>8</strong> Active Events</p>
+        </div>
+        <div class="card" style="flex:1;">
+          <h3>Pending Approvals</h3>
+          <p><strong>3</strong> Awaiting Confirmation</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="bookings" class="content-section" style="display:none;">
+      <h2>My Bookings</h2>
+      <p class="text-muted">List of your event requests and statuses.</p>
+      <table style="width:100%; border-collapse:collapse; margin-top:1rem;">
+        <thead>
+          <tr style="background:var(--muted);">
+            <th style="padding:10px;">Event</th>
+            <th style="padding:10px;">Date</th>
+            <th style="padding:10px;">Location</th>
+            <th style="padding:10px;">Status</th>
+          </tr>
+        </thead>
+        <tbody id="bookingList">
+          <tr><td>Wedding</td><td>2025-02-15</td><td>New York</td><td>Pending</td></tr>
+          <tr><td>Corporate Party</td><td>2025-03-10</td><td>Los Angeles</td><td>Approved</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="create" class="content-section" style="display:none;">
+      <h2>Create Booking</h2>
+      <form id="bookingForm" style="max-width:400px; margin-top:1rem;">
+        <label>Event Name</label>
+        <input type="text" required>
+        <label>Date</label>
+        <input type="date" required>
+        <label>Location</label>
+        <input type="text" required>
+        <label>Description</label>
+        <textarea rows="3"></textarea>
+        <button type="submit" class="btn mt-2">Submit Booking</button>
+      </form>
+      <p id="formMessage" class="text-muted mt-1"></p>
+    </section>
+
+    <section id="settings" class="content-section" style="display:none;">
+      <h2>Settings</h2>
+      <p>Profile and app preferences will go here.</p>
+    </section>
+  </main>
+
+</body>
+</html>

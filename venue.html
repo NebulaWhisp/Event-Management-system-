@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venue Services | Event Management</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+<h2>Book a Venue</h2>
+
+<form class="contact-form" action="../backend/book_venue.php" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="date" name="event_date" required>
+  <textarea name="details" rows="4" placeholder="Describe your venue requirements"></textarea>
+  <button type="submit" class="btn submit-btn">Submit Booking</button>
+</form>
+
+<section class="service-page">
+  <h1>Venue Booking</h1>
+  <p>Browse beautiful venues for weddings, parties, and corporate events.</p>
+
+  <div class="service-grid">
+    <div class="card">
+      <h3>Banquet Halls</h3>
+      <p>Spacious indoor halls for large celebrations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Outdoor Gardens</h3>
+      <p>Perfect for weddings and daytime events.</p>
+    </div>
+
+    <div class="card">
+      <h3>Corporate Halls</h3>
+      <p>Conference rooms, meeting halls & luxury spaces.</p>
+    </div>
+  </div>
+
+  <button class="btn">Book a Venue</button>
+  <br><br>
+  <a href="../index.html" class="btn">Back to Home</a>
+</section>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
